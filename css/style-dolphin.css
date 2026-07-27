@@ -1,0 +1,320 @@
+/* ============================================================
+   AQUAWIKI - DOLPHIN PAGE & UNDERWATER BACKGROUND STYLES
+   ============================================================ */
+
+/* Base Reset & Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+/* Background Theme - Epipelagic (Sunlit) Zone */
+body.zone-epipelagic {
+  background: linear-gradient(180deg, #1b68ce 0%, #114187 50%, #0a2552 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 20px 0 60px 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+/* AquaWiki Brand Link Styling */
+a.nav-brand {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+a.nav-brand:hover {
+  opacity: 0.85;
+}
+
+.nav-logo-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  max-width: 600px;
+}
+
+.nav-links a {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  background: #ffffff;
+  color: #0d3b7a;
+  font-weight: bold;
+}
+
+/* Card Container */
+.card-container {
+  width: 90%;
+  max-width: 480px;
+  margin: 20px auto;
+  background: rgba(14, 43, 92, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 10;
+}
+
+.zone-badge {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+
+.badge-title {
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.badge-sub {
+  font-size: 0.65rem;
+  opacity: 0.8;
+}
+
+.hero-image-box {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.specimen-title {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+}
+
+.sub-taxa {
+  display: flex;
+  gap: 10px;
+  font-size: 0.65rem;
+  margin: 10px 0 15px 0;
+  text-decoration: underline;
+  opacity: 0.9;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.see-more-btn {
+  background: none;
+  border: none;
+  color: #82c0ff;
+  float: right;
+  margin-top: 8px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.section-heading {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin: 10px 0 15px 0;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.gallery-card {
+  flex: 1;
+  height: 90px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.diagram-box {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.diagram-img {
+  width: 100%;
+  display: block;
+}
+
+.nav-arrow {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* ============================================================
+   UNDERWATER BACKGROUND & SCHOOLS OF FISH PARTICLES
+   ============================================================ */
+
+/* Fullscreen Background Layer */
+#underwater-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* School of Fish Container */
+.fish-school {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  opacity: 0.45;
+  filter: drop-shadow(0 0 6px rgba(0, 240, 255, 0.4));
+}
+
+/* Individual Fish Silhouette inside a school */
+.school-fish {
+  position: absolute;
+  width: 18px;
+  height: 7px;
+  background-color: rgba(180, 240, 255, 0.85);
+  clip-path: polygon(0% 50%, 25% 15%, 65% 30%, 85% 50%, 100% 10%, 92% 50%, 100% 90%, 85% 50%, 65% 70%, 25% 85%);
+  animation: tailWiggle 0.6s ease-in-out infinite alternate;
+}
+
+/* School Swimming Direction & Movement */
+.fish-school.swim-right {
+  animation: swimSchoolRight linear infinite;
+}
+
+.fish-school.swim-left {
+  animation: swimSchoolLeft linear infinite;
+}
+
+.fish-school.swim-left .school-fish {
+  transform: scaleX(-1);
+}
+
+/* Floating Underwater Bubbles */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(0, 225, 255, 0.2) 60%, transparent 80%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.6);
+  animation: riseUp linear infinite;
+}
+
+/* Glowing Sparkles / Light Particles */
+.sparkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px #00ffff, 0 0 12px #ffffff;
+  animation: pulseTwinkle ease-in-out infinite alternate;
+}
+
+/* --- ANIMATION KEYFRAMES --- */
+
+@keyframes swimSchoolRight {
+  0% { transform: translateX(-180px) translateY(0); }
+  50% { transform: translateX(50vw) translateY(-25px); }
+  100% { transform: translateX(105vw) translateY(10px); }
+}
+
+@keyframes swimSchoolLeft {
+  0% { transform: translateX(105vw) translateY(0); }
+  50% { transform: translateX(45vw) translateY(30px); }
+  100% { transform: translateX(-180px) translateY(-15px); }
+}
+
+@keyframes tailWiggle {
+  0% { transform: skewY(-3deg) scaleY(0.95); }
+  100% { transform: skewY(3deg) scaleY(1.05); }
+}
+
+@keyframes riseUp {
+  0% { transform: translateY(105vh) scale(0.8); opacity: 0; }
+  15% { opacity: 0.7; }
+  85% { opacity: 0.7; }
+  100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+}
+
+@keyframes pulseTwinkle {
+  0% { transform: scale(0.6); opacity: 0.2; }
+  100% { transform: scale(1.5); opacity: 0.9; }
+}

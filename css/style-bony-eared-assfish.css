@@ -1,0 +1,5 @@
+@import url('style-dolphin.css');
+
+body.zone-bathypelagic {
+  background: linear-gradient(180deg, #081730 0%, #030a17 50%, #01040a 100%);
+}

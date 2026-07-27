@@ -1,0 +1,5 @@
+@import url('style-dolphin.css');
+
+body.zone-abyssopelagic {
+  background: linear-gradient(180deg, #050b17 0%, #02050a 50%, #000000 100%);
+}

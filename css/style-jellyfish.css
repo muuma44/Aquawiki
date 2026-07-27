@@ -1,0 +1,6 @@
+@import url('style-dolphin.css');
+
+/* Background styling matching Jellyfish screen */
+body.zone-epipelagic {
+  background: linear-gradient(180deg, #1460c9 0%, #0d3b80 50%, #07214a 100%);
+}
